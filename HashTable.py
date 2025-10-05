@@ -64,3 +64,18 @@ class HashTable:
 
     def __str__(self):
         return str(self.table)
+
+if __name__ == "__main__":
+    ht = HashTable()
+
+    ht.insert("apple", 1)
+    ht.insert("banana", 2)
+    ht.insert("orange", 3)
+
+    print("Search 'banana':", ht.search("banana"))
+    ht.delete("banana")
+    print("Search 'banana' after deletion:", ht.search("banana"))
+
+    print("Current Hash Table:")
+    print(ht)
+
